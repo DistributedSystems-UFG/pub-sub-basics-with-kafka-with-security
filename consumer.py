@@ -1,5 +1,6 @@
 from kafka import KafkaConsumer
 from const import *
+import sys
 
 consumer = KafkaConsumer(bootstrap_servers=[BROKER_ADDR + ':' + BROKER_PORT])
 try:
