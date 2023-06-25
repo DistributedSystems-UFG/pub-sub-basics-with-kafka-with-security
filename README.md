@@ -47,5 +47,8 @@ $ cd <kafka_dir>
 $ export KAFKA_OPTS="-Djava.security.auth.login.config=./config/kafka_jaas.conf"
 $ ./bin/kafka-server-start.sh ./config/server.properties
 ```
+### For the clients (producer and consumer)
 
 #### Finally, check the code for the producer and consumer (`producer.py` and `consumer.py`) to make sure that the right user names and passwords are passed as keyword arguments when creating the KafkaProducer and KafkaConsumer, respectively. 
+
+Note that producer and consumer should run on two separate machines.
