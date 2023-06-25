@@ -14,7 +14,7 @@ KafkaServer {
    username="admin"
    password="admin-secret"
    user_admin="admin-secret"
-   user_bot="bob-pass"
+   user_bob="bob-pass"
    user_alice="alice-pass";
 };
 ```
