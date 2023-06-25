@@ -5,8 +5,8 @@ import sys
 consumer = KafkaConsumer(bootstrap_servers=[BROKER_ADDR + ':' + BROKER_PORT],
                          security_protocol='SASL_PLAINTEXT',
                          sasl_mechanism='PLAIN',
-                         sasl_plain_username='fmc',
-                         sasl_plain_password='fmc-pass')
+                         sasl_plain_username='bob',
+                         sasl_plain_password='bob-pass')
 try:
   topic = sys.argv[1]
 except:

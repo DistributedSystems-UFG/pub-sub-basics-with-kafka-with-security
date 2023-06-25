@@ -11,8 +11,8 @@ except:
 producer = KafkaProducer(bootstrap_servers=[BROKER_ADDR + ':' + BROKER_PORT],
                          security_protocol='SASL_PLAINTEXT',
                          sasl_mechanism='PLAIN',
-                         sasl_plain_username='fmc',
-                         sasl_plain_password='fmc-pass')
+                         sasl_plain_username='alice',
+                         sasl_plain_password='alice-pass')
 for i in range(100):
     msg = 'My ' + str(i) + 'st message for topic ' + topic
     print ('Sending message: ' + msg)
